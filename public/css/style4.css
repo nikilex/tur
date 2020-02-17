@@ -1,0 +1,290 @@
+body {
+    font-family: "Roboto", Sans-serif;
+}
+
+.container {
+    min-width: 960px;
+}
+
+.container-fluid {
+    min-width: 1200px;
+}
+
+.nav-item-head a {
+    color: #7a7a7a;
+    font-size: 15px;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    font-family: "Roboto", Sans-serif;
+    font-weight: 600;
+    transition: .4s;
+}
+
+.nav-item-head a:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    color: #38d8a0;
+}
+
+.icon {
+    fill: #38d8a0;
+    color: #38d8a0;
+    font-size: 40px;
+}
+
+.blue {
+    background: #007cb9;
+    color: #fff;
+}
+
+.block-search {
+    margin-top: 25px;
+}
+
+.btn-search {
+    height: 50px;
+    background-color: #2db29f;
+    background-image: none;
+    border: 0px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.btn-search:hover {
+    background-color: #2db29f;
+}
+
+.grey {
+    background: #ececfb;
+}
+
+.run {
+    height: 200px;
+    background: url({{ asset('img/beg2.jpg')
+}
+
+
+}
+);
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+color: white;
+
+}
+.run h2 {
+    -webkit-text-shadow: 0px 0px 22px 2px rgba(0,
+    0,
+    0,
+    0.75);
+    -moz-text-shadow: 0px 0px 22px 2px rgba(0,
+    0,
+    0,
+    0.75);
+    text-shadow: 0px 0px 22px 2px rgba(0,
+    0,
+    0,
+    0.75);
+}
+.comment {
+    background-image: url({{ asset('img/000014_orig2.jpg')
+}
+
+}
+);
+background-position: bottom left;
+background-size: cover;
+color: #fff;
+background-attachment: fixed;
+transition: background 0.3s,
+border 0.3s,
+border-radius 0.3s,
+box-shadow 0.3s;
+
+}
+.icon {
+    width: 55px;
+}
+.icon-awesome {
+    color: #438DD5;
+    border-color: #438DD5;
+    font-size: 50px;
+}
+.br0 {
+    border-radius: 0px!important;
+}
+.h2 {
+    font-family: "PT Sans Caption",
+    Sans-serif;
+    font-size: 29px;
+    line-height: 1.4em;
+    letter-spacing: 0.9px;
+    text-shadow: 2px 2px 5px rgba(0,
+    0,
+    0,
+    0.3);
+    font-weight: 600;
+}
+.text-editor {
+    color: #7a7a7a;
+}
+.text-head {
+    font-size: 14px;
+    line-height: 1.6em;
+    letter-spacing: 1.2px;
+    color: #000;
+    font-weight: 600;
+}
+.number {
+    color: rgba(20,
+    6,
+    6,
+    0.68);
+    font-family: "PT Sans Caption",
+    Sans-serif;
+    font-size: 24px;
+    line-height: 1.6em;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+}
+.btn-bron {
+    font-family: "PT Sans",
+    Sans-serif;
+    font-size: 13px;
+    font-weight: 900;
+    fill: #ffffff;
+    color: #ffffff;
+    background-color: #38d8a0;
+    border-radius: 100px 100px 100px 100px;
+    border-color: #38d8a0;
+    line-height: 2.5;
+}
+.btn-bron:hover {
+    background-color: #38d8a0;
+    border-color: #38d8a0;
+    transform: scale(0.9);
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.icon-preim {
+    color: #38d8a0;
+    border-color: #38d8a0;
+}
+.icon-prem-col i {
+    font-size: 100px;
+}
+.header-comment {
+    font-family: "PT Sans Caption",
+    Sans-serif;
+    font-size: 20px;
+    line-height: 1.5em;
+    letter-spacing: 2.7px;
+    font-weight: 600;
+}
+.img-comment {
+    width: 80px!important;
+    height: 80px!important;
+    border-style: solid;
+    border-color: #d6d6d6;
+    border-width: 2px;
+    border-radius: 999px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.header-preim {
+    font-family: "PT Sans Caption",
+    Sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    line-height: 1.6em;
+    letter-spacing: 1.2px;
+    color: #54595f;
+    font-weight: 600;
+}
+.name-comm {
+    color: #ffffff;
+    font-family: "PT Sans Narrow",
+    Sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.name-comm-bottom {
+    color: #ffffff;
+    font-family: "PT Sans Narrow",
+    Sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-style: normal;
+    line-height: 1.4em;
+}
+.mb-10 {
+    margin-bottom: 10rem!important;
+}
+.mt-7 {
+    margin-top: 7rem!important;
+}
+.h2-bottom {
+    font-family: "PT Sans Caption",
+    Sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    line-height: 1.6em;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+    color: #54595f;
+}
+.p-bottom {
+    font-size: 13px;
+}
+.footer {
+    background: url assetimg/sunset-52933.jpg')}}) no-repeat;
+ color: #fff;
+}
+.text-bottom-nav {
+    font-family: "PT Sans Caption",
+    Sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1.7px;
+    color: #fff;
+}
+.text-bottom-nav:hover {
+    color: #fff;
+    -webkit-transform: scale(.8);
+    -ms-transform: scale(.8);
+    transform: scale(.8);
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+hr {
+    border-top: 1px solid rgba(255,
+    255,
+    255,
+    0.5);
+}
+.forward,
+.forward:hover {
+    color: #fff;
+}
+.h2-write {
+    font-family: "PT Sans Caption",
+    Sans-serif;
+    font-size: 22px;
+    letter-spacing: 2.2px;
+    font-weight: 600;
+}
+.h2-phone {
+    color: #ffffff;
+    font-family: "PT Sans Caption",
+    Sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    font-weight: 600;
+}
