@@ -228,7 +228,7 @@ body {
 }
 
 .footer {
-    background: url(/img/sunset-52933.jpg) no-repeat;
+    background: url(/img/hawaii.jpg) no-repeat center center;
     color: #fff;
 }
 
@@ -273,6 +273,154 @@ hr {
     font-weight: 700;
     letter-spacing: 0.1px;
     font-weight: 600;
+}
+
+.img-item{
+    width: 190px!important;
+    height: 130px!important;
+    -o-object-fit: cover;
+    object-fit: cover;
+
+}
+
+.header-item{
+    font-size: 15px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item-sale{
+    width: 190px;
+    margin: 0 30px 0 30px;
+    box-shadow: 1px 1px 3px #a6a6a6;
+    border: 0 solid #bbb;
+}
+
+.description{
+    line-height: 1.39;
+    color: #686868;
+    font-weight: 300;
+    text-align: left;
+    font-size: 14px;
+
+}
+
+.TVHotPriceBlock {
+    position: absolute;
+    width: 82px;
+    background: #ff7302;
+    height: 30px;
+}
+
+.TVHotPriceBlock {
+    right: 0;
+    bottom: 58px;
+}
+
+.TVHotPriceBlock:before {
+    border: 15px solid transparent;
+    border-right-color: #ff7302;
+    content: " ";
+    position: absolute;
+    right: 82px;
+}
+
+.TVHotNewPrice {
+    color: #fff;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    font-size: 17px;
+    text-shadow: -1px -1px 0 #777;
+}
+
+.TVHotNewPrice:after {
+    content: "р";
+    padding-left: 3px;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.TVHotLineUpC .TVHotStarWrap {
+    padding: 8px 0;
+}
+
+.TVHotStarWrap, .TVHotTitle {
+    text-align: left;
+    line-height: 1.39;
+}
+
+ .TVHotStar-ES {
+    display: inline-block;
+    width: 13px;
+    height: 11px;
+    background-image: url(/img/sprite.png);
+    background-position: -117px -79px;
+}
+
+.TVHotInfoBlock {
+    padding: 12px;
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    text-align: left;
+    line-height: 17px;
+    height: 220px;
+}
+
+.TVHotDiscount {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    background-image: url(/img/sprite.png);
+    background-position: -70px -97px;
+    width: 45px;
+    height: 37px;
+    text-align: center;
+    color: #fff;
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: 500;
+    vertical-align: bottom;
+}
+
+.TVHotDiscount:before {
+    content: "-";
+    padding-right: 1px;
+    font-size: 14px;
+}
+
+
+.TVHotImageWrap {
+    position: relative;
+}
+
+.carousel-caption{
+    bottom: 110px;
+}
+
+.header-slider{
+    font-family: "PT Sans Caption", Sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 1.6em;
+    letter-spacing: 2.1px;
+    text-shadow: 4px 3px 13px rgba(0,0,0,0.91);
+
+}
+
+.header-slider-second{
+    font-family: "PT Sans Caption", Sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 1.6em;
+    letter-spacing: 2.1px;
+    text-shadow: 4px 3px 13px rgba(0,0,0,0.91);
+
 }
 
 

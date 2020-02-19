@@ -11,19 +11,45 @@
 |
 */
 use App\Items;
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'HomeController@index');
+
+Route::get('/search', function () {
+    return view('search');
 });
 
-Route::get('/admin', 'AdminController@index')->name('admin');
+Route::post('/send-email', 'FeedbackController@send')->name('send-email');
 
-Route::get('/admin/edit/{id}', 'AdminController@edit');
+Route::get('logout', 'AdminController@logout');
 
-Route::get('/admin/add', 'AdminController@add')->name('create');
+// Route::get('sendbasicemail','MailController@basic_email'); 
+
+// Route::get('sendattachmentemail','MailController@attachment_email');
+
+Route::any('sendhtmlemail','MailController@html_email')->name('sendhtmlemail');
+
+Route::get('/admin', 'AdminController@index')->name('admin')->middleware('auth');
+
+Route::get('/sale', 'SaleController@index')->name('sale');
+
+Route::get('/admin/edit/{id}', 'AdminController@edit')->middleware('auth');
+
+Route::get('/admin/add', 'AdminController@add')->name('create')->middleware('auth');
+
+Route::get('/admin/settings', 'AdminController@settings')->name('settings')->middleware('auth');
+
+Route::get('/admin/slider', 'AdminController@slider')->name('slider')->middleware('auth'); 
 
 Route::post('/addItem', 'AdminController@create')->name('addItem');
 
+Route::post('/updateItem', 'AdminController@update')->name('updateItem');
+
 Route::post('/delete', 'AdminController@delete')->name('delete');
+
+Route::post('/resetPassword', 'AdminController@resetPassword')->name('resetPassword');
+
+Route::post('/emailChange', 'AdminController@emailChange')->name('emailChange');
+
+Route::post('/sliderUpdate', 'AdminController@sliderUpdate')->name('sliderUpdate');
 
 Auth::routes();
 

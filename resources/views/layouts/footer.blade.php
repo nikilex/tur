@@ -1,16 +1,26 @@
+<div class="container">
+<h2 class="h2-bottom mt-5 mb-5 text-center"> МЫ НА КАРТЕ</h2>
+<div class="row mt-4 justify-content-center" >
+
+    <div class="col text-center">
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Affff297e1456e6db7582e6c5de03654f088edac34cc745af5ae0215583b625a2&amp;source=constructor" 
+width="960" height="571" frameborder="0"></iframe></div>
+</div>
+
+</div>
 <div class="footer">
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col text-center mt-5">
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
-                        <a class="nav-link text-bottom-nav" href="#">Главная</a>
+                        <a class="nav-link text-bottom-nav" href="/">Главная</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-bottom-nav" href="#">Поиск туров</a>
+                        <a class="nav-link text-bottom-nav" href="/search">Поиск туров</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-bottom-nav" href="#">Горящие туры</a>
+                        <a class="nav-link text-bottom-nav" href="/sale">Горящие туры</a>
                     </li>
                 </ul>
             </div>
@@ -19,34 +29,11 @@
         <div class="row justify-content-center mt-5">
             <div class="col-4 text-center">
                 <h5>г. Нижний Тагил</h5>
-                <p> пл. Карла Фаберже, д.8, литера Б.</p>
+                <p> Ленина проспект, 28а</p>
             </div>
             <div class="col-4 text-center">
-                <h5>8 (812) 309-43-29</h5>
-                <p> с 10 до 18:00</p>
-            </div>
-        </div>
-        <hr class="my-4">
-        <div class="row justify-content-center mt-5">
-            <div class="col text-center">
-                <h2 class="h2-write">ПИШИТЕ НАМ В МЕССЕНДЖЕРАХ:</h2>
-            </div>
-        </div>
-        <div class="row justify-content-center mt-5">
-            <div class="col text-center">
-                <img class="icon" src="img/WhatsApp-icon.png"><br>
-                <h2 class="h2-phone mt-3">8 (812) 309-43-29</h2>
-                <p>WhatsApp</p>
-            </div>
-            <div class="col text-center">
-                <img class="icon" src="img/768.png"><br>
-                <h2 class="h2-phone mt-3">8 (812) 309-43-29</h2>
-                <p>Telegram</p>
-            </div>
-            <div class="col text-center">
-                <img class="icon" src="img/vkvk.png"><br>
-                <h2 class="h2-phone mt-3">8 (812) 309-43-29</h2>
-                <p>VK</p>
+                <h5>+7 (3435) 25‒45‒55</h5>
+                <p> пн-пт 09:30-18:00 <br> сб 10:00-15:00 <br> вс выходной</p>
             </div>
         </div>
         <hr class="my-4">

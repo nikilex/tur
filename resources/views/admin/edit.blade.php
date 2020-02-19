@@ -11,7 +11,9 @@
         @if (isset($data))
             {{$data}}
         @endif
-        <form method="post" enctype="multipart/form-data" action="{{ route('addItem') }}">
+        <div class="row">
+            <div class="col-6">
+            <form method="post" enctype="multipart/form-data" action="{{ route('updateItem') }}">
         @csrf
             <div class="row">
                 <div class="col-12">
@@ -20,10 +22,16 @@
                         <input type="text" class="form-control" name="name" value="{{ $item->name }}" id="name">
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-3">
                     <div class="form-group">
                         <label for="star">Звездность отеля</label>
-                        <input type="text" class="form-control"value="{{ $item->star }}" name="star" id="star">
+                        <input type="number" class="form-control" value="{{ $item->star }}" name="star" id="star">
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="form-group">
+                        <label for="days">Количество дней</label>
+                        <input type="number" class="form-control" value="{{ $item->days}}" name="days" id="days">
                     </div>
                 </div>
                 <div class="col-6">
@@ -41,16 +49,11 @@
                 <div class="col-6">
                     <div class="form-group">
                         <label for="country">Страна прибытия</label>
-                        <input type="text" class="form-control"value="{{ $item->country }}" name="country" id="country">
+                        <input type="text" class="form-control" value="{{ $item->country }}" name="country" id="country">
                     </div>
                 </div>
                 
-                <div class="col-6">
-                    <div class="form-group">
-                        <label for="days">Количество дней</label>
-                        <input type="text" class="form-control" value="{{ $item->days}}" name="days" id="days">
-                    </div>
-                </div>
+                
                 <div class="col-6">
                     <div class="form-group">
                         <label for="eat">Тип питания</label>
@@ -60,13 +63,13 @@
                 <div class="col-6">
                     <div class="form-group">
                         <label for="price">Цена</label>
-                        <input type="text" class="form-control" value="{{ $item->price}}" name="price" id="price">
+                        <input type="number" class="form-control" value="{{ $item->price}}" name="price" id="price">
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="form-group">
                         <label for="sale">Скидка</label>
-                        <input type="text" class="form-control" value="{{ $item->sale }}" name="sale" id="sale">
+                        <input type="number" class="form-control" value="{{ $item->sale }}" name="sale" id="sale">
                     </div>
                 </div>
                 <div class="col-6">
@@ -75,11 +78,15 @@
                         <input type="file" class="form-control" name="photo" id="photo">
                     </div>
                 </div>
+                <input type="hidden" class="form-control" name="id" value="{{ $item->id }}" id="id">
                 <div class="col-3">
                     <button type="submit" class="btn btn-success btn-block">Сохранить</button>
                 </div>
             </div>
 </form>
+            </div>
+        </div>
+        
     </div>
 </main>
 @endsection
